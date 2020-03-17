@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="794.0" spacing="10.0" styleClass="root" stylesheets="@TheStoreStylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DisplayCatGUIController">
+    <children>
+        <HBox fx:id="windowBar" alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="794.0" spacing="2.0" style="-fx-background-color: #222831;">
+            <children>
+                <Label fx:id="minimizeButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimizeScreenEvent" prefHeight="41.0" prefWidth="25.0" text="-" textFill="WHITE" translateY="-8.0">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="42.0" />
+                    </font>
+                </Label>
+                <Label fx:id="closeButton" onMouseClicked="#closeEvent" prefHeight="26.0" prefWidth="29.0" text="X" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                    </font>
+                </Label>
+            </children></HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="92.0" prefWidth="794.0" spacing="229.0">
+            <children>
+                <Label fx:id="backButton" onMouseClicked="#backEvent" prefHeight="45.0" prefWidth="55.0" stylesheets="@TheStoreStylesheet.css" text="&lt;" textAlignment="RIGHT" textFill="WHITE" translateX="33.0" translateY="-4.0">
+                    <font>
+                        <Font name="Corbel" size="46.0" />
+                    </font>
+                </Label>
+                <Label fx:id="headerLabel" styleClass="header-label" stylesheets="@TheStoreStylesheet.css" text="Display Categories" />
+            </children>
+        </HBox>
+      <ListView fx:id="catList" maxWidth="-Infinity" prefHeight="336.0" prefWidth="356.0" styleClass="my-list" />
+    </children>
+</VBox>

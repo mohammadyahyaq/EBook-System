@@ -1,0 +1,55 @@
+
+.root {
+    -fx-background-color: #393e46;
+}
+
+.header-label {
+    -fx-font-size: 30;
+    -fx-text-fill: #ffffff;
+    -fx-pref-height: 70;
+}
+
+.main-menu-button {
+    -fx-font-size: 23;
+    -fx-text-fill: #9be3de;
+
+    -fx-pref-height: 60;
+    -fx-pref-width: 350;
+
+    -fx-background-radius: 50;
+    -fx-background-color: #393e46;
+
+    -fx-border-radius: 50;
+    -fx-border-color: #00909e;
+    -fx-border-width: 2;
+}
+
+.main-menu-button:hover {
+    -fx-font-size: 23;
+    -fx-text-fill: #393e46;
+
+    -fx-pref-height: 60;
+    -fx-pref-width: 350;
+
+    -fx-background-radius: 50;
+    -fx-background-color: #00909e;
+}
+
+.normal-labels {
+    -fx-font-size: 25;
+    -fx-text-fill: #ffffff;
+}
+
+.normal-textfield {
+    -fx-pref-height: 30;
+    -fx-pref-width: 150;
+}
+
+.radio-button {
+    -fx-font-size: 15;
+    -fx-text-fill: #ffffff;
+}
+
+.my-list {
+    -fx-font-size: 15;
+}
