@@ -69,13 +69,13 @@ public class DisplayBooksGUIController implements Initializable {
 
         searchTextField.textProperty().addListener((v, oldValue, newValue) -> {
             if (filterCB.getValue().equals("All")){
-                ObservableList<Book> newList =FXCollections.observableList(Main.myStore.getObservableList().stream().filter(book -> book.getName().startsWith(newValue)).collect(Collectors.toList()));
+                ObservableList<Book> newList =FXCollections.observableList(Main.myStore.getObservableList().stream().filter(book -> book.getName().toLowerCase().startsWith(newValue.toLowerCase())).collect(Collectors.toList()));
                 bookList.setItems(newList);
             } else if (filterCB.getValue().equals("Available")) {
-                ObservableList<Book> newList =FXCollections.observableList(Main.myStore.getAvailableBooks().stream().filter(book -> book.getName().startsWith(newValue)).collect(Collectors.toList()));
+                ObservableList<Book> newList =FXCollections.observableList(Main.myStore.getAvailableBooks().stream().filter(book -> book.getName().toLowerCase().startsWith(newValue.toLowerCase())).collect(Collectors.toList()));
                 bookList.setItems(newList);
             } else {
-                ObservableList<Book> newList =FXCollections.observableList(Main.myStore.getRentedBooks().stream().filter(book -> book.getName().startsWith(newValue)).collect(Collectors.toList()));
+                ObservableList<Book> newList =FXCollections.observableList(Main.myStore.getRentedBooks().stream().filter(book -> book.getName().toLowerCase().startsWith(newValue.toLowerCase())).collect(Collectors.toList()));
                 bookList.setItems(newList);
             }
         });

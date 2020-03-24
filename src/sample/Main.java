@@ -1,5 +1,12 @@
 package sample;
 
+/*
+________________________________________________
+Name: Mohammad Yahya Ahmad Alghafli (1741679)
+Subject: Software Technology Topics (CPCS-405)
+________________________________________________
+*/
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
